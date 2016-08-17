@@ -1,4 +1,4 @@
-{
+ {
   "name": "mymdb",
   "version": "1.0.0",
   "main": "app.js",
@@ -14,4 +14,4 @@
     "express": "^4.14.0",
     "mongoose": "^4.5.9"
   }
-}
+}   
