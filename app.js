@@ -136,6 +136,8 @@ app.listen(app.get('port'), function() {
   console.log('running on port: ' + app.get('port'));
 });
 
+module.exports = app;
+
 //AT THIS POINT --> we can try to run "node app" in terminal and got to localhost:7000 --> we'll see CANNOT GET /
 
 //step5: go to terminal and install mongoose --> npm install mongoose --save
