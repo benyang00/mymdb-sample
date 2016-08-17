@@ -1,0 +1,10 @@
+language: node_js
+node_js:
+- node
+deploy:
+  provider: heroku
+  api_key:
+    secure: ar282pceEVrM4w5MmMh9OunJioZFc4f/C+S0erFJmWgQoCQJQrMpofHTqJ5rzqS1m5c7m4BHSDKtM8hyOTZsoOt51vOJmBtSpa7Dzy6bRRVKoGquiMUVImmdh6bJabQr/asesaRZn9FHlV2i+s8Xzef1DZ4718GsoNDFyJ/39cJVWMkUKfYM8DUfddIcFImStvAoOrMb3eD4fW/j07vxbssmlY0Ie5B3rZ+tglikO/UuuTPW1rcRjN3s9y72UBh+i4ddkQkVKt9jwqvbS6wPGYCRJahvnSaYJGKQMxrB6pUsu8dcXa6zjbGe/xzgeBM1h/TFZ702E1VLES81omQJzpLUDtiWrw/nUp+UBAcTK/nKesgOqW7Ajl4+5vsIDBMqoKzcTA7Sv+VkuKiTkWzRAzoF2OUgbVOUgs03t3i+vBeQ3HtD0z6I/0BvpRV+Z0e0A2RoqORN+AT/cSlLIL3KNHj8L5fzDSgaRXZvUAraM0x1V29KttNYP+16N7ThSUe+uVwqzGTKS6GMN09TanxF2D0Yey34h85pr9HnjKV1drkpf5W8idECEuAhiVzIwsLuoJX5vCDAufG21ckB/JBoTeWLJESxWCAVWmlfW1nQG68EsxQs+mVc4R+iYWfyXXChf5sViRNrLiQT2K3wXj0xKgEptV2OOnBTP+QBAUOTmOc=
+  app: mymdb-sample
+  on:
+    repo: benyang00/mymdb-sample
