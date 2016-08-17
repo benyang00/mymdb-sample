@@ -1,7 +1,7 @@
 // This is all setting up the server
 
 //step6a: declare mongo url
-var mongo_url = 'mongodb://localhost/mymdb_db'; //mongodb://username:password@host:port/db; on localhost, mongodb usually run on port 27017
+var mongo_url = process.env.MONGODB_URI || 'mongodb://localhost/mymdb_db'; //mongodb://username:password@host:port/db; on localhost, mongodb usually run on port 27017
 //step6b: require mongoose module
 var mongoose = require('mongoose');
 //step6c: connect mongoose to the app
@@ -128,7 +128,7 @@ app.route('/actors/:actor_id') //app listens to route /actors and listen to whet
 
 
 //step3: set the port
-var port = 7000; //can be anything
+var port = process.env.PORT || 7000; //can be anything
 app.set('port', port);
 
 //step4: listen to the port
